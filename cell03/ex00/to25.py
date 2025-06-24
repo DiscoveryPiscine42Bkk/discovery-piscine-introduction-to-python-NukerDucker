@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 input_number = int(input("Enter a number less than 25: "))
 if input_number > 25:
     print("Error")

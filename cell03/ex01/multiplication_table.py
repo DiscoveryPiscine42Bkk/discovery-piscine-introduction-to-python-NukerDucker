@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 user_input = input("Enter a number: ")
 num = 0
 while num < 10:

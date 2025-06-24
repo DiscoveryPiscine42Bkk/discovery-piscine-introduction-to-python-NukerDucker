@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 input1 = int(input("Enter the first number: "))
 input2 = int(input("Enter the second number: "))
 result = input1 * input2

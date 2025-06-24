@@ -24,3 +24,10 @@ The file structure for this repository is as follows:
 - cell1
   - ex00
     - exercise0.py
+
+---
+
+### To make Python an executable.
+- add 
+- #!/usr/bin/python
+- run chmod 755 filename.py

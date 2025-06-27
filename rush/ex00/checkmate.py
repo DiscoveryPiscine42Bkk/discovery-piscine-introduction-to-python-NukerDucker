@@ -45,12 +45,15 @@ def is_under_attack(board, pos):
     return False
 
 def checkmate(board_str):
-    board = [list(row) for row in board_str.strip().split('\n')]
-    king_pos = find_king(board)
-    
-    if not king_pos:
-        return "Fail (No King Found)"
-    if not is_under_attack(board, king_pos):
-        return "Fail (King not under attack)"
+    try:
+        board = [list(row) for row in board_str.strip().split('\n')]
+        king_pos = find_king(board)
+        
+        if not king_pos:
+            return "Fail (No King Found)"
+        if not is_under_attack(board, king_pos):
+            return "Fail (King not under attack)"
 
-    return "Success"
+        return "Success"
+    except Exception as e:
+        return f"Error"

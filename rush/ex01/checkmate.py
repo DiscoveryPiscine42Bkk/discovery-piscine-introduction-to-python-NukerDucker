@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 def find_king(board):
     for row in range(len(board)):
         for col in range(len(board)):
@@ -57,4 +56,4 @@ def checkmate(board_str):
 
         return "Success"
     except Exception as e:
-        return "Error"
+        return f"Error"
